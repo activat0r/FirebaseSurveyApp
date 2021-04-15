@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Survey</string>
+    <string name="login_activity_email_id_hint">EMAIL ID</string>
+    <string name="login_activity_api_token_hint">API TOKEN</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

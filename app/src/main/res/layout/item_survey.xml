@@ -1,0 +1,50 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:id="@+id/survey_item"
+    android:weightSum="10">
+    <TextView
+        android:id="@+id/survey_item_name"
+        android:layout_width="wrap_content"
+        android:layout_weight="7"
+        android:layout_height="wrap_content"
+        android:text="Sprint Name"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_gravity="center_vertical">
+    </TextView>
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:id="@+id/survey_item_score"
+        android:maxEms="3"
+        android:inputType="number|none"
+        android:digits="0123456789"
+        android:background="@color/white"
+        android:text="00"
+        android:textIsSelectable="false"
+        android:imeOptions="actionNext"
+        android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+        ></com.google.android.material.textfield.TextInputEditText>
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:id="@+id/survey_item_check"
+        android:layout_weight="1"
+        android:src="@drawable/ic_round_check_24"
+        ></androidx.appcompat.widget.AppCompatImageButton>
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:layout_width="@dimen/_24sdp"
+        android:layout_height="@dimen/_24sdp"
+        android:id="@+id/survey_item_clear"
+        android:layout_weight="1"
+        android:src="@drawable/ic_round_clear_24"
+        ></androidx.appcompat.widget.AppCompatImageButton>
+</LinearLayout>
